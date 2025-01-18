@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luz e Cena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/cartaz.css" />
+    <link rel="stylesheet" href="./styles/filme-lista.css" />
+    <link rel="stylesheet" href="./styles/combo.css" />
+    <link rel="stylesheet" href="./styles/newsletter.css" />
+    <link rel="stylesheet" href="./styles/separador.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" aria-label="navegação principal">
+        <ul class="nav__list">
+          <li class="menu__toggle">
+            <button class="menu__toggle_icon" aria-label="menu hamburguer">
+              <img src="./images/menu.svg" alt="Menu hamburguer">
+            </button>
+          </li>
+          <li class="nav__item">
+            <img src="./images/Logo.svg" alt="Logo do site">
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Eventos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Clube Fidelidade</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Sobre Nós</a>
+          </li>
+          <li class="nav__item nav__item_form">
+            <form action="" class="nav__form">
+              <input type="search" id="localizacao" class="nav__input">
+            </form>
+          </li>
+          <li class="nav__item nav__icons">
+            <a href="#" aria-label="carrinho de compras">
+              <img src="./images/Carrinho.svg" alt="carrinho" />
+            </a>
+            <a href="#" aria-label="perfil">
+              <img src="./images/Perfil.svg" alt="meu perfil" />
+            </a>
+          </li>
+        </ul>
+        
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="banner__container">
+        <h2 class="banner__titulo">Onde a realidade<br><span class="banner__titulo-destaque">encontra a fantasia!</span></h2>
+      </div>
+    </section>
+    <section class="cartaz">
+      <ul class="menu__list" role="tablist" aria-label="navegação de categorias">
+        <li class="menu__list-item menu__list-item-ativo" role="tab" aria-selected="true">
+          Em cartaz
+        </li>
+        <li class="menu__list-item" role="tab">
+          Em breve
+        </li>
+      </ul>
+
+      <form action="">
+        <input type="search" class="cartaz__pesquisa" aria-label="Campo de busca dos filmes" placeholder="Qual filme você procura?">
+      </form>
+      <h2 class="cartaz__titulo">Em cartaz</h2>
+
+      <ul class="filme__list">
+        <li class="filme__list-item">
+          <img class="filme__list-imagem" src="./images/poster/oNexusDoTempo.png" alt="Poster do filme o nexus do tempo">
+          <div class="filme__list-container">
+            <h3 class="filme__list-item-titulo">O Nexus do Tempo</h3>
+            <div class="filme__list-descricao">
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-tipo">Ficção Científica</p>
+                <p class="filme__list-descricao-dimensao-3d">3D</p>
+              </div>
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-duracao">105 minutos</p>
+                <p class="filme__list-descricao-idade">10 anos</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="filme__list-item">
+          <img class="filme__list-imagem" src="./images/poster/amanhecer.png" alt="Poster do filme amanhecer">
+          <div class="filme__list-container">
+            <h3 class="filme__list-item-titulo">Amanhecer</h3>
+            <div class="filme__list-descricao">
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-tipo">Romance</p>
+                <p class="filme__list-descricao-dimensao">2D</p>
+              </div>
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-duracao">90 minutos</p>
+                <p class="filme__list-descricao-idade-livre">Livre</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="filme__list-item">
+          <img class="filme__list-imagem" src="./images/poster/amigosDoBosque.png" alt="Poster do filme amigos do bosque mágico">
+          <div class="filme__list-container">
+            <h3 class="filme__list-item-titulo">Amigos do Bosque Mágico</h3>
+            <div class="filme__list-descricao">
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-tipo">Animação</p>
+                <p class="filme__list-descricao-dimensao">2D</p>
+              </div>
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-duracao">80 minutos</p>
+                <p class="filme__list-descricao-idade-livre">Livre</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="filme__list-item">
+          <img class="filme__list-imagem" src="./images/poster/caminhoParaOAbismo.png" alt="Poster do filme caminho para o abismo">
+          <div class="filme__list-container">
+            <h3 class="filme__list-item-titulo">Caminho para o Abismo</h3>
+            <div class="filme__list-descricao">
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-tipo">Horror</p>
+                <p class="filme__list-descricao-dimensao">2D</p>
+              </div>
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-duracao">103 minutos</p>
+                <p class="filme__list-descricao-idade">14 anos</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="filme__list-item">
+          <img class="filme__list-imagem" src="./images/poster/desastresDoEscritorio.png" alt="Poster do filme desastres do escritorio">
+          <div class="filme__list-container">
+            <h3 class="filme__list-item-titulo">Desastres do Escritório</h3>
+            <div class="filme__list-descricao">
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-tipo">Comédia</p>
+                <p class="filme__list-descricao-dimensao">2D</p>
+              </div>
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-duracao">85 minutos</p>
+                <p class="filme__list-descricao-idade-livre">Livre</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="filme__list-item">
+          <img class="filme__list-imagem" src="./images/poster/mestresDoFuturo.png" alt="Poster do filme mestres do futuro">
+          <div class="filme__list-container">
+            <h3 class="filme__list-item-titulo">Mestres do Futuro</h3>
+            <div class="filme__list-descricao">
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-tipo">Documentário</p>
+                <p class="filme__list-descricao-dimensao">2D</p>
+              </div>
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-duracao">120 minutos</p>
+                <p class="filme__list-descricao-idade-livre">Livre</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="filme__list-item">
+          <img class="filme__list-imagem" src="./images/poster/laEsperanza.png" alt="Poster do filme la esperanza">
+          <div class="filme__list-container">
+            <h3 class="filme__list-item-titulo">La Esperanza</h3>
+            <div class="filme__list-descricao">
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-tipo">Drama</p>
+                <p class="filme__list-descricao-dimensao">2D</p>
+              </div>
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-duracao">98 minutos</p>
+                <p class="filme__list-descricao-idade">12 anos</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="filme__list-item">
+          <img class="filme__list-imagem" src="./images/poster/amigoDaSombra.png" alt="Poster do filme amigo da sombra">
+          <div class="filme__list-container">
+            <h3 class="filme__list-item-titulo">Amigo da Sombra</h3>
+            <div class="filme__list-descricao">
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-tipo">Suspense</p>
+                <p class="filme__list-descricao-dimensao">2D</p>
+              </div>
+              <div class="filme__list-linha">
+                <p class="filme__list-descricao-duracao">110 minutos</p>
+                <p class="filme__list-descricao-idade">12 anos</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="combo">
+      <div class="combo__container">
+        <h2 class="combo__titulo">Combo <span class="combo__titulo-destaque">Dragon's Ascent</span></h2>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter__container">
+        <h2 class="newsletter__titulo">Inscreva-se para ganhar descontos!</h2>
+        <form class="newsletter__formulario" aria-labelledby="newsletter-titulo" action="">
+          <input type="email" placeholder="Digite seu melhor email" class="newsletter__input">
+          <button type="submit" class="newsletter__button">Inscrever</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__columns">
+        <div class="footer__column-logo">
+          <img class="footer__column-image" src="./images/Logo-white.svg" alt="Logo luz e cena">
+          <h4 class="footer__column-text">Onde a realidade encontra a fantasia</h4>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-titulo">Funcionamento</h4>
+          <ul class="footer__column-list">
+            <li>
+              <p>Segunda a sexta - 16h às 00h</p>
+            </li>
+            <li>
+              <a href="mailto:ola@luzecena.com.br">ola@luzecena.com.br</a>
+            </li>
+            <li>
+              <a href="tel:0800541320">0800 541 320</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-titulo">Institucional</h4>
+          <ul class="footer__column-list">
+            <li>
+              <a href="#">Sobre Nós</a>
+            </li>
+            <li>
+              <a href="#">Para Empresas</a>
+            </li>
+            <li>
+              <a href="#">Clube Fidelidade</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-titulo">Siga nossas redes</h4>
+          <ul class="footer__column-list footer__column-list-redes-sociais">
+            <li>
+              <a href="#">
+                <img class="redesocial" src="./images/Whatsapp.svg" alt="Logo do Whatsapp">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="redesocial"  src="./images/Tiktok.svg" alt="Logo do Tiktok">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="redesocial"  src="./images/Instagram.svg" alt="Logo do instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
